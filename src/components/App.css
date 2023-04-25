@@ -4,17 +4,10 @@
   margin-bottom: 40px;
 }
 
-.Logo {
-  height: 100vmin;
-  width: 100vmin;
-  align-items: left;
-  padding: 10px
-}
-
 .App-header {
   background-color: white;
   /* #0ED6BD */
-  min-height: 5vh;
+  min-height: 1vh;
   display: flex;
   flex: auto;
   flex-flow: row;
@@ -24,8 +17,6 @@
 }
 
 .body {
-  height: 80vw;
-  width: 100vw;
   background: radial-gradient(circle at center, #ffffff, #E3735E);
   font-size: 90px;
   text-align: center;

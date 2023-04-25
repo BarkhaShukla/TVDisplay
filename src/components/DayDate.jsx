@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import './/App.css';
 
-function SRAMission() {
+function CurrentTime() {
     const [time, setTime] = useState(new Date());
+    const [dayOfWeek, setDayOfWeek] = useState('');
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(new Date());
@@ -10,6 +11,13 @@ function SRAMission() {
 
         return () => clearInterval(interval);
     }, []);
+    useEffect(() => {
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const today = new Date();
+        const currentDayOfWeek = days[today.getDay()];
+        setDayOfWeek(currentDayOfWeek);
+    }, []);
+
 
     const formatTime = (time) => {
         const hours = time.getHours();
@@ -19,18 +27,32 @@ function SRAMission() {
         const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
         return `${formattedHours}:${formattedMinutes} ${ampm}`;
     };
+
+    const getCurrentDate = () => {
+        const months = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+
+        const today = new Date();
+        const month = months[today.getMonth()];
+        const day = today.getDate();
+        const year = today.getFullYear();
+
+        return `${month} ${day}, ${year}`;
+    };
+
     return (
         <div className="header">
-
             <img src="/img/logo.jpg" alt="" align="left" />
             <p className="Time">
                 {formatTime(time)}
             </p>
             <div className="body" style={{ display: 'flex', alignItems: 'center', height: '100vh' }}>
-                <p style={{ margin: '0 auto' }}>The Shirley Ryan Abilitylab is a rehabilitation hospital <br /> where I focus on brain recovery.</p>
+                <p style={{ margin: '0 auto', }}>Today's date is {getCurrentDate()}<br /><br /> It is {dayOfWeek}</p>
             </div>
         </div>
     );
 }
 
-export default SRAMission;
+export default CurrentTime;

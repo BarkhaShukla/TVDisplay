@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import './/App.css';
-import { logo } from './/shirley-ryan-abilitylab-vector-logo 2.svg';
 
-function CurrentTime() {
+function SRALabImg() {
     const [time, setTime] = useState(new Date());
-
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(new Date());
@@ -12,27 +10,30 @@ function CurrentTime() {
 
         return () => clearInterval(interval);
     }, []);
+
     const formatTime = (time) => {
         const hours = time.getHours();
         const minutes = time.getMinutes();
-        const ampm = hours >= 12 ? "pm" : "am";
+        const ampm = hours >= 12 ? "PM" : "AM";
         const formattedHours = hours % 12 || 12;
         const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
         return `${formattedHours}:${formattedMinutes} ${ampm}`;
     };
 
-
     return (
-        <div className="body">
+        <div className="header">
             <p className="Time">
-                <span className="Logo">
-                    <img src={logo} alt="" />
-                </span>
+                <img src="/img/logo.jpg" alt="" align="left" />
                 {formatTime(time)}
             </p>
+            <div>
+                <img src="/img/entrance1.jpg" alt="entrance" style={{ height: "100vh", width: "100vw", align: "center" }} />
+            </div>
 
-        </div>
+        </div >
+
     );
 }
 
-export default CurrentTime;
+
+export default SRALabImg;

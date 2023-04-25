@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import CurrentTime from "./components/CurrentTime";
+import DayDate from "./components/DayDate";
 import Location from "./components/Location";
-import ImageDisplay from "./components/ImageDisplay";
+import SRALabImg from "./components/SRALabImg";
 import SRAMission from "./components/SRAMission";
 const pages = [
-  { title: "Current Time and Date", component: <CurrentTime /> },
-  { title: "Current Location", component: <Location /> },
-  { title: "Image Display", component: <ImageDisplay /> },
-  { title: "SRA Mission", component: <SRAMission /> }
+  { component: <DayDate /> },
+  { component: <Location /> },
+  { component: <SRALabImg /> },
+  { component: <SRAMission /> }
 ];
 
 function App() {
