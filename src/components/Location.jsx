@@ -29,7 +29,7 @@ function Location() {
             <div className="body" style={{ display: 'flex', alignItems: 'center', height: '100vh' }}>
                 <p style={{ margin: '0 auto', }}>I am in Chicago, IL <br />
                     <div style={{ position: "fixed", bottom: 0, left: 0, right: 0 }}>
-                        <img src="" alt="" style={{ display: "block", margin: "0 auto" }} />
+                        <img src="/img/skyline.png" alt="" style={{ display: "block", margin: "0 auto", height: "55vh", width:"100vw"}} />
                     </div>
                 </p>
             </div>
