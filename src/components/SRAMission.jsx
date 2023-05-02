@@ -20,14 +20,13 @@ function SRAMission() {
         return `${formattedHours}:${formattedMinutes} ${ampm}`;
     };
     return (
-        <div className="header">
-
-            <img src="/img/logo.jpg" alt="" align="left" />
-            <p className="Time">
+        <div className="App-header">
+           <img src={process.env.PUBLIC_URL+'/img/logo.jpg'} alt="logo" align="left"/>
+            <div style={{ textAlign: 'right', padding: '30px'}}>
                 {formatTime(time)}
-            </p>
-            <div className="body" style={{ display: 'flex', alignItems: 'center', height: '100vh' }}>
-                <p style={{ margin: '0 auto' }}>The Shirley Ryan Abilitylab is a rehabilitation hospital <br /> where I focus on brain recovery.</p>
+            </div>
+            <div className="body">
+                <p>The Shirley Ryan Abilitylab is a rehabilitation hospital <br /> where I focus on brain recovery.</p>
             </div>
         </div>
     );

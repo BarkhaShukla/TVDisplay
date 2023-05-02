@@ -21,13 +21,13 @@ function SRALabImg() {
     };
 
     return (
-        <div className="header">
-            <p className="Time">
-                <img src="/img/logo.jpg" alt="" align="left" />
-                {formatTime(time)}
-            </p>
+        <div className="App-header">
+        <img src={process.env.PUBLIC_URL+'/img/logo.jpg'} alt="logo" align="left"/>
+        <div style={{ textAlign: 'right', padding: '30px'}}>
+            {formatTime(time)}
+        </div>
             <div>
-                <img src="/img/entrance1.jpg" alt="entrance" style={{ height: "100vh", width: "100vw", align: "center" }} />
+                <img src={process.env.PUBLIC_URL+'/img/entrance1.jpg'} alt="entrance" style={{height: "75vh", width: "100vw", align: "center" }} />
             </div>
 
         </div >

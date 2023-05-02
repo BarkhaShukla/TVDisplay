@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setPageIndex((pageIndex + 1) % pages.length);
-    }, 6000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [pageIndex]);
