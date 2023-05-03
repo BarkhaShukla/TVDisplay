@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "742acbf8690ef5dcf5855344669781f9",
+    "revision": "c16d0d53fc9450ee3dec1dd41b800b22",
     "url": "/TVDisplay/index.html"
   },
   {
-    "revision": "d9e9e7ff29a758e81581",
+    "revision": "676b335e3dc7eb91eb42",
     "url": "/TVDisplay/static/css/main.79d10765.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TVDisplay/static/js/2.ac1c8c1f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d9e9e7ff29a758e81581",
-    "url": "/TVDisplay/static/js/main.883e93cb.chunk.js"
+    "revision": "676b335e3dc7eb91eb42",
+    "url": "/TVDisplay/static/js/main.aa473123.chunk.js"
   },
   {
     "revision": "1a20cc918beb29844339",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TVDisplay/static/css/main.79d10765.chunk.css",
-    "main.js": "/TVDisplay/static/js/main.883e93cb.chunk.js",
-    "main.js.map": "/TVDisplay/static/js/main.883e93cb.chunk.js.map",
+    "main.js": "/TVDisplay/static/js/main.aa473123.chunk.js",
+    "main.js.map": "/TVDisplay/static/js/main.aa473123.chunk.js.map",
     "runtime-main.js": "/TVDisplay/static/js/runtime-main.f88a79a0.js",
     "runtime-main.js.map": "/TVDisplay/static/js/runtime-main.f88a79a0.js.map",
     "static/js/2.ac1c8c1f.chunk.js": "/TVDisplay/static/js/2.ac1c8c1f.chunk.js",
     "static/js/2.ac1c8c1f.chunk.js.map": "/TVDisplay/static/js/2.ac1c8c1f.chunk.js.map",
     "index.html": "/TVDisplay/index.html",
-    "precache-manifest.823d2fbf7f1651e699b45a3bcd5cbe51.js": "/TVDisplay/precache-manifest.823d2fbf7f1651e699b45a3bcd5cbe51.js",
+    "precache-manifest.064cc0f1c9c447a9639f37038f531658.js": "/TVDisplay/precache-manifest.064cc0f1c9c447a9639f37038f531658.js",
     "service-worker.js": "/TVDisplay/service-worker.js",
     "static/css/main.79d10765.chunk.css.map": "/TVDisplay/static/css/main.79d10765.chunk.css.map",
     "static/js/2.ac1c8c1f.chunk.js.LICENSE.txt": "/TVDisplay/static/js/2.ac1c8c1f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f88a79a0.js",
     "static/js/2.ac1c8c1f.chunk.js",
     "static/css/main.79d10765.chunk.css",
-    "static/js/main.883e93cb.chunk.js"
+    "static/js/main.aa473123.chunk.js"
   ]
 }
