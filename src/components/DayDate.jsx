@@ -44,7 +44,7 @@ function CurrentTime() {
 
     return (
         <div className="App-header">
-            <img src="../public/img/logo.jpg" alt="logo" align="left"/>
+            <img src={process.env.PUBLIC_URL+'/img/logo.jpg'} alt="logo" align="left"/>
             <div style={{ textAlign: 'right', padding: '30px'}}>
                 {formatTime(time)}
             </div>
