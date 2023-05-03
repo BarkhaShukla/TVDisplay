@@ -21,12 +21,13 @@ function SRAMission() {
     };
     return (
         <div className="App-header">
-           <img src={process.env.PUBLIC_URL+'/img/logo.jpg'} alt="logo" align="left"/>
+           <img src="../public/img/logo.jpg" alt="logo" align="left"/>
             <div style={{ textAlign: 'right', padding: '30px'}}>
                 {formatTime(time)}
             </div>
             <div className="body">
-                <p>The Shirley Ryan Abilitylab is a rehabilitation hospital <br /> where I focus on brain recovery.</p>
+                <p>I am in a hospital where I focus on brain recovery.</p>
+                
             </div>
         </div>
     );

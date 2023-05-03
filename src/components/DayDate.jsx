@@ -44,12 +44,12 @@ function CurrentTime() {
 
     return (
         <div className="App-header">
-            <img src={process.env.PUBLIC_URL+'/img/logo.jpg'} alt="logo" align="left"/>
+            <img src="../public/img/logo.jpg" alt="logo" align="left"/>
             <div style={{ textAlign: 'right', padding: '30px'}}>
                 {formatTime(time)}
             </div>
             <div className="body">
-                <p style={{ margin: '0 auto', }}>Today's date is {getCurrentDate()}<br /><br /> It is {dayOfWeek}</p>
+                <p style={{ margin: '0 auto', }}>Today's date is: <br/> {getCurrentDate()}.<br /><br /> Today is {dayOfWeek}.</p>
             </div>
         </div>
     );
